@@ -14,26 +14,35 @@ const Navbar = () => {
       <div className='wrapper'>
         <div className='search'>
           <input type='text' placeholder='Search...' />
-          <SearchOutlinedIcon />
+          <SearchOutlinedIcon className='icon' />
         </div>
         <div className='items'>
           <div className='item'>
-            <LanguageOutlinedIcon /> English
+            <LanguageOutlinedIcon className='icon' /> English
           </div>
           <div className='item'>
-            <DarkModeOutlinedIcon />
+            <DarkModeOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <FullscreenExitOutlinedIcon />
+            <FullscreenExitOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <NotificationsNoneOutlinedIcon />
+            <NotificationsNoneOutlinedIcon className='icon' />
+            <div className='counter'>1</div>
           </div>
           <div className='item'>
-            <ChatBubbleOutlineOutlinedIcon />
+            <ChatBubbleOutlineOutlinedIcon className='icon' />
+            <div className='counter'>2</div>
           </div>
           <div className='item'>
-            <ListOutlinedIcon />
+            <ListOutlinedIcon className='icon' />
+          </div>
+          <div className='item'>
+            <img
+              src='https://images.unsplash.com/photo-1633421878925-ac220d8f6e4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80'
+              alt='levelImg'
+              className='avatar'
+            />
           </div>
         </div>
       </div>
