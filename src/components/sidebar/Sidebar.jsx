@@ -14,6 +14,7 @@ import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined
 import ExitToAppTwoToneIcon from '@mui/icons-material/ExitToAppTwoTone'
 
 const Sidebar = () => {
+  const user = false
   return (
     <div className='sidebar'>
       <div className='top'>
@@ -75,10 +76,17 @@ const Sidebar = () => {
             <AccountCircleOutlinedIcon className='icon' />
             <span>Profile</span>
           </li>
-          <li>
-            <ExitToAppTwoToneIcon className='icon' />
-            <span>Logout</span>
-          </li>
+          {user ? (
+            <li>
+              <ExitToAppTwoToneIcon className='icon' />
+              <span>Login</span>
+            </li>
+          ) : (
+            <li>
+              <ExitToAppTwoToneIcon className='icon' />
+              <span>Logout</span>
+            </li>
+          )}
         </ul>
       </div>
       <div className='bottom'>
