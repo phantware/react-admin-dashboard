@@ -12,13 +12,15 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined'
 import SettingsApplicationsOutlinedIcon from '@mui/icons-material/SettingsApplicationsOutlined'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined'
 import ExitToAppTwoToneIcon from '@mui/icons-material/ExitToAppTwoTone'
-
+import { Link } from 'react-router-dom'
 const Sidebar = () => {
-  const user = false
+  const user = true
   return (
     <div className='sidebar'>
       <div className='top'>
-        <span className='logo'>Phantware</span>
+        <span className='logo'>
+          <Link to='/'>Phantware</Link>
+        </span>
       </div>
       <hr />
       <div className='center'>
@@ -79,7 +81,9 @@ const Sidebar = () => {
           {user ? (
             <li>
               <ExitToAppTwoToneIcon className='icon' />
-              <span>Login</span>
+              <span>
+                <Link to='/login'>Login</Link>
+              </span>
             </li>
           ) : (
             <li>
