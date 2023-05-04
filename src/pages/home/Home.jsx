@@ -23,6 +23,10 @@ const Home = () => {
           <Featured />
           <Chart />
         </div>
+        <div className='charts'>
+          <Featured />
+          <Chart />
+        </div>
       </div>
     </div>
   )
