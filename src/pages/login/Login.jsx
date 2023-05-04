@@ -14,30 +14,25 @@ const Login = () => {
   }
 
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <input
-        style={{ padding: 10, marginBottom: 20 }}
-        type='text'
-        placeholder='username'
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        style={{ padding: 10, marginBottom: 20 }}
-        type='password'
-        placeholder='password'
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleClick} style={{ padding: 10, width: 100 }}>
-        Login
-      </button>
+    <div>
+      <form className='register-form'>
+        <h2 className='formH'>Login</h2>
+        <input
+          type='text'
+          placeholder='username'
+          onChange={(e) => setUsername(e.target.value)}
+          className='buttonInput'
+        />
+        <input
+          type='password'
+          placeholder='password'
+          onChange={(e) => setPassword(e.target.value)}
+          className='buttonInput'
+        />
+        <button onClick={handleClick} className='buttonInput btn'>
+          Login
+        </button>
+      </form>
     </div>
   )
 }
