@@ -1,7 +1,7 @@
-import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { login } from '../../redux/apiCalls'
+import '../login/login.scss'
 
 const Login = () => {
   const [username, setUsername] = useState('')
@@ -14,9 +14,8 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='body'>
       <form className='register-form'>
-        <h2 className='formH'>Login</h2>
         <input
           type='text'
           placeholder='username'
@@ -29,7 +28,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           className='buttonInput'
         />
-        <button onClick={handleClick} className='buttonInput btn'>
+        <button onClick={handleClick} className='btn'>
           Login
         </button>
       </form>
