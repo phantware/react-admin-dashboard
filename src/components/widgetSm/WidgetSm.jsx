@@ -1,8 +1,8 @@
 import React from 'react'
 import './widgetSm.css'
-import { Visibility } from '@material-ui/icons'
 import { useEffect, useState } from 'react'
 import { axiosInstance } from '../../utils/requestMethods'
+import { VisibilityOffOutlined } from '@mui/icons-material'
 
 export default function WidgetSm() {
   const [users, setUsers] = useState([])
@@ -35,7 +35,7 @@ export default function WidgetSm() {
               <span className='widgetSmUsername'>{user.username}</span>
             </div>
             <button className='widgetSmButton'>
-              <Visibility className='widgetSmIcon' />
+              <VisibilityOffOutlined className='widgetSmIcon' />
               Display
             </button>
           </li>
