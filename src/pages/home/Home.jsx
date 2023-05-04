@@ -26,8 +26,8 @@ const Home = () => {
           <Chart />
         </div>
         <div className='charts'>
-          <WidgetLg />
           <WidgetSm />
+          <WidgetLg />
         </div>
       </div>
     </div>
