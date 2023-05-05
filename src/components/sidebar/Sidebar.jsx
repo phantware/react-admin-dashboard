@@ -34,7 +34,9 @@ const Sidebar = () => {
 
           <li>
             <PersonOutlineOutlinedIcon className='icon' />
-            <span>Users</span>
+            <span>
+              <Link to='/users'>Users</Link>
+            </span>
           </li>
           <li>
             <StoreOutlinedIcon className='icon' />
