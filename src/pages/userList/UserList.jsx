@@ -1,12 +1,10 @@
 import React from 'react'
 // import './userList.css'
-// import { DataGrid } from '@material-ui/data-grid'
-// import { DeleteOutline } from '@material-ui/icons'
+import { DataGrid } from '@material-ui/data-grid'
+import { DeleteOutline } from '@material-ui/icons'
 import { userRows } from '../../dummyData'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { DeleteOutlineOutlined } from '@mui/icons-material'
-import { DataGrid } from '@mui/x-data-grid'
 
 export default function UserList() {
   const [data, setData] = useState(userRows)
@@ -51,7 +49,7 @@ export default function UserList() {
             <Link to={'/user/' + params.row.id}>
               <button className='userListEdit'>Edit</button>
             </Link>
-            <DeleteOutlineOutlined
+            <DeleteOutline
               className='userListDelete'
               onClick={() => handleDelete(params.row.id)}
             />
