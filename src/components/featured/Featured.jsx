@@ -30,10 +30,14 @@ const Featured = () => {
       </div>
       <div className='bottom'>
         <div className='featuredChart'>
-          <CircularProgressbar value={90} text={'90%'} strokeWidth={3} />
+          <CircularProgressbar
+            value={perc}
+            text={Math.floor(perc) + '%'}
+            strokeWidth={3}
+          />
         </div>
         <p className='title'>Total Sales made today</p>
-        <p className='amount'>${income[1]?.total || 0}</p>
+        <p className='amount'>${income[0]?.total}</p>
         <p className='desc'>Above is the total sales made today</p>
         <div className='summary'>
           <div className='item'>
