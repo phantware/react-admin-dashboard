@@ -1,5 +1,5 @@
 import React from 'react'
-// import './userList.css'
+import './userList.css'
 import { DataGrid } from '@material-ui/data-grid'
 import { DeleteOutline } from '@material-ui/icons'
 import { userRows } from '../../dummyData'
