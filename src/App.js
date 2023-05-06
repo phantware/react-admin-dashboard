@@ -4,6 +4,7 @@ import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import UserList from './pages/userList/UserList'
 import User from './pages/user/User'
+import NewUser from './newUser/NewUser'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route path='users'>
               <Route index element={<UserList />} />
               <Route path=':userId' element={<User />} />
-              {/* <Route path='new' element={<New />} /> */}
+              <Route path='new' element={<NewUser />} />
             </Route>
             <Route path='products'>
               {/* <Route index element={<List />} /> */}
