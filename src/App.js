@@ -17,7 +17,7 @@ function App() {
             <Route path='users'>
               <Route index element={<UserList />} />
               <Route path=':userId' element={<User />} />
-              <Route path=':new' element={<NewUser />} />
+              <Route path='new' element={<NewUser />} />
             </Route>
             <Route path='products'>
               {/* <Route index element={<List />} /> */}
