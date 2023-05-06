@@ -1,7 +1,7 @@
 import React from 'react'
 import './productList.css'
-import { DataGrid } from '@material-ui/data-grid'
-import { DeleteOutline } from '@material-ui/icons'
+import { DataGrid } from '@mui/x-data-grid'
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -50,10 +50,10 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={'/product/' + params.row._id}>
+            <Link to={'/products/' + params.row._id}>
               <button className='productListEdit'>Edit</button>
             </Link>
-            <DeleteOutline
+            <DeleteOutlinedIcon
               className='productListDelete'
               onClick={() => handleDelete(params.row._id)}
             />
