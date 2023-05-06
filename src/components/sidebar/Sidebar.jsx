@@ -40,7 +40,9 @@ const Sidebar = () => {
           </li>
           <li>
             <StoreOutlinedIcon className='icon' />
-            <span>Products</span>
+            <span>
+              <Link to='/products'>Products</Link>
+            </span>
           </li>
           <li>
             <CreditCardOutlinedIcon className='icon' />
