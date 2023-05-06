@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import UserList from './pages/userList/UserList'
+import User from './pages/user/User'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='users'>
               <Route index element={<UserList />} />
-              {/* <Route path=':userId' element={<Single />} /> */}
+              <Route path=':userId' element={<User />} />
               {/* <Route path='new' element={<New />} /> */}
             </Route>
             <Route path='products'>
